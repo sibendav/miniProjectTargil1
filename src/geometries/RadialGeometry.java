@@ -1,9 +1,16 @@
 package geometries;
 
 import java.util.Objects;
-
+/**
+ * The class: RadialGeometry representing an object with radius
+ * Fields: radius
+ * * implements Geometry interface
+ * @author  Simha Ben-David & Tahel Nadav
+ */
 public abstract class RadialGeometry implements Geometry{
-    private double _radius;
+    double _radius;
+
+    //ctr with radius
     RadialGeometry(double j)
     {
         _radius=j;
@@ -12,6 +19,7 @@ public abstract class RadialGeometry implements Geometry{
     public double get_radius() {
         return _radius;
     }
+    //copy ctr
     public RadialGeometry(RadialGeometry j)
     {
         _radius=j._radius;

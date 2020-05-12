@@ -1,4 +1,4 @@
-package primitives;
+package premitives;
 
 /**
  * Util class is used for some internal utilities, e.g. controlling accuracy
