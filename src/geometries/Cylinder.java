@@ -1,15 +1,21 @@
 package geometries;
 
 import premitives.Ray;
-
+/**
+ * The class: Cylinder representing a tube with height
+ * Fields: tube's fields + height
+ * @author  Simha Ben-David & Tahel Nadav
+ */
 public class Cylinder extends Tube {
     private double _height;
 
+    //ctr thid radius ray and height
     Cylinder(double j, Ray r, double h) {
         super(j, r);
         _height=h;
     }
 
+    //ctr with radial geometry object and height
     public Cylinder(RadialGeometry j, Ray r, double h) {
         super(j, r);
         _height=h;
